@@ -42,3 +42,19 @@ body{
     font-family: Poppins;
     font-weight: 500;
 }
+
+/* Responsive site  */
+/* for small device  */
+@media screen and (max-width: 567px) {
+    .space{
+        margin: 0;
+    }
+
+
+    .header-container{
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    
+}
