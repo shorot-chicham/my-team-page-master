@@ -83,7 +83,7 @@ figcaption>strong {
     height: auto;
 }
 
-#special-member-2, #special-member-1 {
+#special-member-3, #special-member-1 {
    margin-top: 100px;
 }
 
@@ -120,6 +120,20 @@ footer a {
         flex-direction: column;
         padding: 20px 10px;
     }
-    
+    /* members container  */
+    .members-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 24px;
+        margin-top: 72px;
+        margin-bottom: 120px;
+    }
+    #special-member-2, #special-member-4{
+        margin-top: 100px;
+    }
+
+    #special-member-3 {
+        margin-top: 0;
+     }
+     
 
 }
