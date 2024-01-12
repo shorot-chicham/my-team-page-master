@@ -1,19 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: #f4f4f4;
 }
 
-.space{
+.space {
     margin-left: 100px;
     margin-right: 100px;
 }
+
 /* header container  */
 
-.header-container{
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: top;
@@ -22,13 +23,13 @@ body{
     margin-bottom: 100px;
 }
 
-.header-container > h2{
+.header-container>h2 {
     font-family: PT Serif;
     font-size: 36px;
     font-weight: 700;
 }
 
-.header-info > h3{
+.header-info>h3 {
     font-family: Poppins;
     font-size: 18px;
     font-weight: 600;
@@ -37,24 +38,88 @@ body{
     color: #000;
 }
 
-.header-info > p{
+.header-info>p {
     font-size: 18px;
     font-family: Poppins;
     font-weight: 500;
 }
 
+/* members container styles  */
+
+.members-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+
+}
+
+.member {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5px;
+}
+
+.member p {
+    writing-mode: vertical-lr;
+    color: #000;
+    font-family: PT Serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+figcaption>strong {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.member figure>img {
+    width: 100%;
+    height: auto;
+}
+
+#special-member-2, #special-member-1 {
+   margin-top: 100px;
+}
+
+/* footer  */
+
+footer {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+footer>p small {
+    color: #A9A9A9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer a {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: #A9A9A9;
+}
+
 /* Responsive site  */
 /* for small device  */
 @media screen and (max-width: 567px) {
-    .space{
+    .space {
         margin: 0;
     }
 
 
-    .header-container{
+    .header-container {
         flex-direction: column;
         padding: 20px 10px;
     }
-
     
+
 }
